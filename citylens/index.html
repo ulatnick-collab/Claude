@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Город-лупа</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Детективная игра: разглядывайте огромный город и раскрывайте дела.">
+<meta name="theme-color" content="#f4eedb">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Город-лупа">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="home" class="screen">
+  <header class="hero">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><circle cx="50" cy="50" r="30" fill="#cfe6f1" stroke="#2a2622" stroke-width="7"/><path d="M73 73L104 104" stroke="#2a2622" stroke-width="11" stroke-linecap="round"/><path d="M36 58V48h8v10M50 58V40h8v18" fill="none" stroke="#2a2622" stroke-width="4" stroke-linejoin="round"/></svg>
+    </div>
+    <h1>Город-лупа</h1>
+    <p>Огромный город, крошечные люди и пять запутанных дел. Всматривайтесь, следите за героями и находите преступников.</p>
+  </header>
+  <div id="installTip" class="tip hidden">Чтобы играть без браузера, коснитесь «Поделиться» в Safari и выберите «На экран “Домой”».</div>
+  <section id="caseList" class="list" aria-label="Дела"></section>
+  <footer class="foot">
+    <button id="howto" class="link">Как играть</button>
+    <button id="reset" class="link">Сбросить прогресс</button>
+  </footer>
+</main>
+
+<div id="game" class="screen hidden">
+  <div id="mapwrap"><svg id="map" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg></div>
+  <div class="topbar">
+    <button id="back" class="round" aria-label="К списку дел">‹</button>
+    <div id="topTitle" class="toptitle"></div>
+    <button id="caseBtn" class="pill">Дело</button>
+  </div>
+  <div class="zoom">
+    <button id="zin" class="round" aria-label="Приблизить">+</button>
+    <button id="zout" class="round" aria-label="Отдалить">−</button>
+  </div>
+  <div class="bottombar">
+    <button id="hintBtn" class="pill ghost">Подсказка</button>
+    <button id="answerBtn" class="pill primary">Ответить</button>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+</div>
+
+<div id="sheetBack" class="sheetback hidden"></div>
+<section id="sheet" class="sheet hidden" role="dialog" aria-modal="true"></section>
+
+<script src="js/figures.js"></script>
+<script src="js/city.js"></script>
+<script src="js/cases.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

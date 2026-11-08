@@ -1,0 +1,17 @@
+{
+  "name": "Город-лупа",
+  "short_name": "Город-лупа",
+  "description": "Детективная игра: разглядывайте огромный город и раскрывайте дела.",
+  "lang": "ru",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4eedb",
+  "theme_color": "#f4eedb",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
